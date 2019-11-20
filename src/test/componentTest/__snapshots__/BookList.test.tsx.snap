@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render component Book list 1`] = `
+<div>
+  <BookTile
+    id={1}
+  />
+  <BookTile
+    id={2}
+  />
+  <BookTile
+    id={3}
+  />
+  <BookTile
+    id={4}
+  />
+  <BookTile
+    id={5}
+  />
+  <BookTile
+    id={6}
+  />
+  <BookTile
+    id={7}
+  />
+  <BookTile
+    id={8}
+  />
+  <BookTile
+    id={9}
+  />
+  <BookTile
+    id={10}
+  />
+</div>
+`;

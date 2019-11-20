@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render component book tile 1`] = `
+<div>
+  "books number \`
+  \`"
+</div>
+`;
