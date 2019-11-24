@@ -1,5 +1,5 @@
 import React from 'react'
-import { Homepage } from "./../../component//Homepage";
+import { Homepage } from "./Homepage";
 import { mount, shallow, render } from "enzyme";
 
 it("render component homepage",()=>{

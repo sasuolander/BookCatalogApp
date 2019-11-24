@@ -1,5 +1,5 @@
 import React from 'react'
-import {BookTile} from './../../component/BookTile'
+import {BookTile} from './BookTile'
 import { mount, shallow, render } from "enzyme";
 
 it("render component book tile",()=>{

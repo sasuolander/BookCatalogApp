@@ -1,5 +1,5 @@
 import React from 'react'
-import { AddBook } from "./../../component/AddBook";
+import { AddBook } from "./AddBook";
 import { mount, shallow, render } from "enzyme";
 
 it("render component Add book",()=>{

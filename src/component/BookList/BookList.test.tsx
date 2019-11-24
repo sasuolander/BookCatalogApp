@@ -1,5 +1,5 @@
 import React from 'react'
-import { BookList } from "./../../component/BookList";
+import { BookList } from "./BookList";
 import { mount, shallow, render } from "enzyme";
 
 it("render component Book list",()=>{

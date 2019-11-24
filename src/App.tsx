@@ -1,15 +1,27 @@
 import React from "react";
 import logo from "./media/logo.svg";
 import "./style/App.scss";
-import { BookList } from "./component/BookList";
-import { Navigation } from "./component/Navigation";
+import { BookList } from "./component/BookList/BookList";
+import { Navigation } from "./component/Navigation/Navigation";
 import { Switch, Route } from "react-router-dom";
-import { AddBook } from "./component/AddBook";
-import { Homepage } from "./component/Homepage";
+import { AddBook } from "./component/AddBook/AddBook";
+import { Homepage } from "./component/Homepage/Homepage";
 
-interface AppInterface {}
 
-function App(): AppInterface {
+interface BookState{
+author:String,
+title:String,
+itemType:String,
+abstract:String,
+date:Date,
+isbn:Number,
+DOI:String,
+}
+
+
+//const arrayTest:BookState[]=["testi","testi2"];
+
+function App(){
   return (
     <div className="content">
       <h1 className="mainheader">Book Catalog</h1>
