@@ -1,0 +1,30 @@
+.navigation-bar .btn{
+    padding: 0 10px 0 0;
+    display: block;
+  }
+  
+  
+  
+  .navigation-active {
+    background-color:#42f587;
+  
+  }
+  
+  .navigation-bar{
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-btn{
+    order: 0;
+  }
+  
+  .add-btn{
+    order: 1;
+    //padding: 0 10px 0 0;
+  }
+  .list-btn {
+    order: 2;
+  }

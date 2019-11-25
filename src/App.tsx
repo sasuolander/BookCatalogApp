@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "./media/logo.svg";
-import "./style/App.scss";
 import { BookList } from "./component/BookList/BookList";
 import { Navigation } from "./component/Navigation/Navigation";
 import { Switch, Route } from "react-router-dom";
@@ -8,15 +7,7 @@ import { AddBook } from "./component/AddBook/AddBook";
 import { Homepage } from "./component/Homepage/Homepage";
 
 
-interface BookState{
-author:String,
-title:String,
-itemType:String,
-abstract:String,
-date:Date,
-isbn:Number,
-DOI:String,
-}
+
 
 
 //const arrayTest:BookState[]=["testi","testi2"];
