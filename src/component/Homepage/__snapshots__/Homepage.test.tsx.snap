@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Homepage render component homepage 1`] = `
+<div>
+  <p>
+    home page
+  </p>
+</div>
+`;
+
 exports[`render component homepage 1`] = `
 <div>
   <p>

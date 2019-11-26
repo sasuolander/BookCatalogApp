@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Book tile render component book tile 1`] = `
+<div>
+  "books number \`
+  \`"
+</div>
+`;
+
 exports[`render component book tile 1`] = `
 <div>
   "books number \`

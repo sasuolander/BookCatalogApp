@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Add book render empty component Add book 1`] = `
+<div>
+  <p>
+    test
+  </p>
+  <form />
+</div>
+`;
+
 exports[`render component Add book 1`] = `
 <div>
   <p>
