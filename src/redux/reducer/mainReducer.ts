@@ -1,5 +1,5 @@
-import {combineReducers} from 'redux'
+import { combineReducers } from "redux";
 
 //export default combineReducers({book,books});
 
-export default combineReducers({default:()=>2});
+export default combineReducers({ default: () => 2 });
