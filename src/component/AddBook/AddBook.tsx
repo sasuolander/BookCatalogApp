@@ -9,9 +9,12 @@ export const AddBook: FunctionComponent<componentAddProps> = ({}): JSX.Element =
     <div>
       <p>test</p>
       <form>
-        <Field name={"test1"} component="input" />
-        <Field name={"test2"} component="input" />
+        <Field name={"author"} component="input" />
+        <Field name={"title"} component="input" />
+        <Field name={"abstract"} component="input" />
+        <Field name={"itemType"} component="input" />
       </form>
     </div>
   );
 };
+//["author", "title", "abstract", "itemType"]

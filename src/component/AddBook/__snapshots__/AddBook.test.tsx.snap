@@ -1,3 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Add book render empty component Add book 1`] = `undefined`;
+exports[`Add book render empty component Add book 1`] = `
+<div>
+  <p>
+    test
+  </p>
+  <form>
+    <Field
+      component="input"
+      name="test1"
+    />
+    <Field
+      component="input"
+      name="test2"
+    />
+  </form>
+</div>
+`;
