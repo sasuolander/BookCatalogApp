@@ -6,10 +6,3 @@ exports[`Book tile render component book tile 1`] = `
   \`"
 </div>
 `;
-
-exports[`render component book tile 1`] = `
-<div>
-  "books number \`
-  \`"
-</div>
-`;

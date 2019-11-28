@@ -7,11 +7,3 @@ exports[`Homepage render component homepage 1`] = `
   </p>
 </div>
 `;
-
-exports[`render component homepage 1`] = `
-<div>
-  <p>
-    home page
-  </p>
-</div>
-`;

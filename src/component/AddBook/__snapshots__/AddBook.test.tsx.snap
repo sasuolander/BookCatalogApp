@@ -8,11 +8,19 @@ exports[`Add book render empty component Add book 1`] = `
   <form>
     <Field
       component="input"
-      name="test1"
+      name="author"
     />
     <Field
       component="input"
-      name="test2"
+      name="title"
+    />
+    <Field
+      component="input"
+      name="abstract"
+    />
+    <Field
+      component="input"
+      name="itemType"
     />
   </form>
 </div>
