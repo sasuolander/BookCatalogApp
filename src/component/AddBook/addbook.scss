@@ -1,0 +1,49 @@
+.add-book {
+  display: flex;
+
+  flex-direction: column; // vertical layout
+    padding: 10px 0 0 0;
+  @media screen and (min-width: 480px) {
+    flex-direction: row; // horizontal layout
+  }
+}
+
+.form-group > * {
+  flex: 1; // grow to fill
+}
+
+.form-group .label {
+  flex: none; // don't grow
+  @media screen and (min-width: 480px) {
+    order: -1; // make sure the label is first
+  }
+}
+
+.form-container .label {
+  margin-right: 1em;
+  font-weight: bold;
+  @media screen and (min-width: 480px) {
+    width: 150px;
+    text-align: right;
+  }
+}
+
+.form-container .input {
+  width: 50%;
+}
+
+.form-container form {
+  max-width: 640px;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.add-book-btn{
+   
+
+}
+.container-btn{
+    text-align: left;
+    padding: 1em 0 0 0em ;
+    margin-left: 164px; padding-left: 0em;
+}

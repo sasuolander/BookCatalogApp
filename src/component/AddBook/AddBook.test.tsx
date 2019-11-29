@@ -46,10 +46,26 @@ describe("Add book", () => {
 
     wrap
       .find("form")
-      .children()
+      .find(".add-book")
+      .children(".input")
       .map((node: any) => {
         fields.push(node.props().name);
       });
     expect(fields).toEqual(expect.arrayContaining(list));
+  });
+
+  it("find all non-optionan labels in the form", () => {
+    let labels: string[] = [];
+    const expectedLabels: string[] = ["Title", "Author", "Abstract", "Type"];
+
+    wrap
+      .find("form")
+      .find(".add-book")
+      .children(".label")
+      .map((node: any) => {
+        labels.push(node.props().children);
+      });
+
+    expect(labels).toEqual(expect.arrayContaining(expectedLabels));
   });
 });

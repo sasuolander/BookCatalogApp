@@ -1,27 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Add book render empty component Add book 1`] = `
-<div>
+<div
+  className="form-container"
+>
   <p>
     test
   </p>
   <form>
-    <Field
-      component="input"
-      name="author"
-    />
-    <Field
-      component="input"
-      name="title"
-    />
-    <Field
-      component="input"
-      name="abstract"
-    />
-    <Field
-      component="input"
-      name="itemType"
-    />
+    <div
+      className="add-book"
+    >
+      <label
+        className="label title"
+      >
+        Title
+      </label>
+      <Field
+        className="input type"
+        component="input"
+        name="title"
+      />
+    </div>
+    <div
+      className="add-book"
+    >
+      <label
+        className="label author"
+      >
+        Author
+      </label>
+      <Field
+        className="input type"
+        component="input"
+        name="author"
+      />
+    </div>
+    <div
+      className="add-book"
+    >
+      <label
+        className="label abstract"
+      >
+        Abstract
+      </label>
+      <Field
+        className="input type"
+        component="input"
+        name="abstract"
+      />
+    </div>
+    <div
+      className="add-book"
+    >
+      <label
+        className="label type"
+      >
+        Type
+      </label>
+      <Field
+        className="input type"
+        component="input"
+        name="itemType"
+      />
+    </div>
+    <div
+      className="container-btn"
+    >
+      <button
+        className="add-book-btn"
+      >
+        Submit
+      </button>
+    </div>
   </form>
 </div>
 `;

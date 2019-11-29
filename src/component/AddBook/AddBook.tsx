@@ -6,13 +6,31 @@ interface componentAddProps {}
 
 export const AddBook: FunctionComponent<componentAddProps> = ({}): JSX.Element => {
   return (
-    <div>
+    <div className={"form-container"}>
       <p>test</p>
       <form>
-        <Field name={"author"} component="input" />
-        <Field name={"title"} component="input" />
-        <Field name={"abstract"} component="input" />
-        <Field name={"itemType"} component="input" />
+        <div className={"add-book"}>
+          <label className={"label title"}>Title</label>
+          <Field className={"input type"} name={"title"} component="input" />
+        </div>
+
+        <div className={"add-book"}>
+          <label className={"label author"}>Author</label>
+          <Field className={"input type"} name={"author"} component="input" />
+        </div>
+
+        <div className={"add-book"}>
+          <label className={"label abstract"}>Abstract</label>
+          <Field className={"input type"} name={"abstract"} component="input" />
+        </div>
+
+        <div className={"add-book"}>
+          <label className={"label type"}>Type</label>
+          <Field className={"input type"} name={"itemType"} component="input" />
+        </div>
+        <div className={"container-btn"}>
+          <button className={"add-book-btn"}>Submit</button>
+        </div>
       </form>
     </div>
   );
