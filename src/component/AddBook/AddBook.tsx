@@ -2,7 +2,10 @@ import React, { FunctionComponent } from "react";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
 
-interface componentAddProps {}
+interface componentAddProps {
+  //onClick?:(event:React.MouseEvent<HTMLButtonElement>)=>void,
+  //onChange?:(event:React.MouseEvent<HTMLButtonElement>)=>void,
+}
 
 export const AddBook: FunctionComponent<componentAddProps> = ({}): JSX.Element => {
   return (
@@ -29,7 +32,7 @@ export const AddBook: FunctionComponent<componentAddProps> = ({}): JSX.Element =
           <Field className={"input type"} name={"itemType"} component="input" />
         </div>
         <div className={"container-btn"}>
-          <button className={"add-book-btn"}>Submit</button>
+          <button className={"add-book-btn"} onClick={(e)=>{e.preventDefault(); console.log("press");}}>Submit</button>
         </div>
       </form>
     </div>

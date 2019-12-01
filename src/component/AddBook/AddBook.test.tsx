@@ -1,14 +1,11 @@
 import React from "react";
 import { AddBook } from "./AddBook";
-import AddBookContainer from "./AddBookContainer";
 import { mount, shallow, render } from "enzyme";
 import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import { combineReducers } from "redux";
-import { Provider } from "react-redux";
 import { reducer as formReducer } from "redux-form";
-
-import { BookModel } from "./../../model/book";
+import { BookModel } from "./../../model/StateOfApp";
 
 const rootReducer = combineReducers({
   form: formReducer

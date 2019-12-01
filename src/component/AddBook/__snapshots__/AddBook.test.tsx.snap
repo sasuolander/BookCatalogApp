@@ -69,6 +69,7 @@ exports[`Add book render empty component Add book 1`] = `
     >
       <button
         className="add-book-btn"
+        onClick={[Function]}
       >
         Submit
       </button>
