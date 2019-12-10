@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './style/main.scss';
-import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router } from 'react-router-dom';
-import store from './redux/store';
-import { Provider } from 'react-redux';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./style/main.scss";
+import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter as Router } from "react-router-dom";
+import store from "./redux/store";
+import { Provider } from "react-redux";
 
 const app = (
   <Router>

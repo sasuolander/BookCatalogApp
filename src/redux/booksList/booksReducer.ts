@@ -21,7 +21,7 @@ export const bookList = (state = initialState, action: any) => {
     case ADD_BOOK.SUCCESS:
       return {
         ...state,
-        books: Object.assign({}, action.payload)
+        books: [...state.books, action.payload]
       };
 
     default:

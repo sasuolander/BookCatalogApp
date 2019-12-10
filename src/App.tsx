@@ -1,12 +1,9 @@
 import React from "react";
-import logo from "./media/logo.svg";
 import { BookList } from "./component/BookList/BookList";
 import { Navigation } from "./component/Navigation/Navigation";
 import { Switch, Route } from "react-router-dom";
 import WrappedComponentAddBook from "./component/AddBook/AddBookContainer";
 import { Homepage } from "./component/Homepage/Homepage";
-
-//const arrayTest:BookState[]=["testi","testi2"];
 
 function App() {
   return (
