@@ -3,7 +3,7 @@ import logo from "./media/logo.svg";
 import { BookList } from "./component/BookList/BookList";
 import { Navigation } from "./component/Navigation/Navigation";
 import { Switch, Route } from "react-router-dom";
-import AddBookContainer from "./component/AddBook/AddBookContainer";
+import WrappedComponentAddBook from "./component/AddBook/AddBookContainer";
 import { Homepage } from "./component/Homepage/Homepage";
 
 //const arrayTest:BookState[]=["testi","testi2"];
@@ -18,7 +18,7 @@ function App() {
       <Switch>
         <Route exact={true} path="/" component={Homepage}></Route>
         <Route path="/books" component={BookList}></Route>
-        <Route path="/addbook" component={AddBookContainer}></Route>
+        <Route path="/addbook" component={WrappedComponentAddBook}></Route>
       </Switch>
     </div>
   );

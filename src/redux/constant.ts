@@ -1,15 +1,23 @@
 //Add
-export const ADD_BOOK_SUCCESS = "ADD_BOOK_SUCCESS";
-export const ADD_BOOK_FAIL = "ADD_BOOK_FAIL";
-export const ADD_BOOK_PENDING = "ADD_BOOK_PENDING";
+export enum ADD_BOOK {
+     SUCCESS = "add_book/success",
+     FAIL = "add_book/fail",
+     PENDING = "add_book/pending"
+}
+
 
 //Loading book to list
-export const LOAD_BOOK_SUCCESS = "LOAD_BOOK_SUCCESS";
-export const LOAD_BOOK_FAIL = "LOAD_BOOK_FAIL";
-export const LOAD_BOOK_PENDING = "LOAD_BOOK_PENDING";
+export enum LOAD_BOOK {
+    SUCCESS = "load_book/success",
+    FAIL = "load_book/fail",
+    PENDING = "load_book/pending",
+}
+
 
 //Edit book
-export const EDIT_BOOK_SUCCESS = "EDIT_BOOK_SUCCESS";
-export const EDIT_BOOK_FAIL = "EDIT_BOOK_FAIL";
-export const EDIT_BOOK_PENDING = "EDIT_BOOK_PENDING";
-export const EDIT_BOOK_PARTIAL = "EDIT_BOOK_PARTIAL";
+export enum EDIT_BOOK {
+    SUCCESS = "edit_book/success",
+    FAIL = "edit_book/fail",
+    PENDING = "edit_book/pending",
+    PARTIAL = "edit_book/partial",
+}

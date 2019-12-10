@@ -9,6 +9,10 @@ export interface BookModel {
     pages?: Number;
   }
 
-  export interface ListOfBookState{
-    ListOfBook:BookModel[]
+  export interface ListOfBookState extends StatusOfAction {
+    books:BookModel[]
+}
+
+export interface StatusOfAction {
+  hasErrored?: Boolean
 }
