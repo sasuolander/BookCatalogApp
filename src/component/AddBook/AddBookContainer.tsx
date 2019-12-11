@@ -9,21 +9,19 @@ interface formProps {}
 
 interface StateFromProps extends ListOfBookState {}
 interface mapDispatchToProps {
-  addbook2: Function;
+  addBookFunction: Function;
 }
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  addbook2: (book: BookModel) => dispatch(addBookAction(book))
+  addBookFunction: (book: BookModel) => dispatch(addBookAction(book))
 });
 
-const WrappedComponentAddBook = reduxForm<formProps>({ form: "addbook" })(
-  AddBook
-);
+const AddBookContainer = reduxForm<formProps>({ form: "addbook" })(AddBook);
 
 const mapStateToProps = (state: any) => ({
   books: state.mainlist.books
 });
 
-export default connect<StateFromProps, {}>(
+export default connect<StateFromProps, mapDispatchToProps>(
   mapStateToProps,
   mapDispatchToProps
-)(WrappedComponentAddBook);
+)(AddBookContainer);

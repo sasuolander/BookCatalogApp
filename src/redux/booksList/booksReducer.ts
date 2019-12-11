@@ -1,5 +1,5 @@
 import { ADD_BOOK } from "../constant";
-import { ListOfBookState, BookModel } from "../../model/StateOfApp";
+import { ListOfBookState } from "../../model/StateOfApp";
 
 const initialState: ListOfBookState = {
   books: [],

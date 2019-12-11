@@ -1,18 +1,16 @@
 import React, { FunctionComponent } from "react";
-import { Field, reduxForm, InjectedFormProps } from "redux-form";
+import { Field, InjectedFormProps } from "redux-form";
 import { BookModel } from "./../../model/StateOfApp";
-
-import { addBookAction } from "../../redux/booksList/bookListAction";
 
 interface componentAddProps extends InjectedFormProps {
   books?: [];
-  addbook2?: Function;
+  addBookFunction?: Function;
 }
 
 export const AddBook: FunctionComponent<componentAddProps> = ({
   handleSubmit,
   books,
-  addbook2
+  addBookFunction
 }): JSX.Element => {
   const createBookObject = (data: any): BookModel => {
     const book: BookModel = {
@@ -26,7 +24,7 @@ export const AddBook: FunctionComponent<componentAddProps> = ({
 
   const addtoBook = (data: any) => {
     const book = createBookObject(data);
-    addbook2!(book);
+    addBookFunction!(book);
     console.log(books, book);
   };
 

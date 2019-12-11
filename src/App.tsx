@@ -1,8 +1,8 @@
 import React from "react";
-import { BookList } from "./component/BookList/BookList";
+import { BookListContainer } from "./component/BookList/BookListContainer";
 import { Navigation } from "./component/Navigation/Navigation";
 import { Switch, Route } from "react-router-dom";
-import WrappedComponentAddBook from "./component/AddBook/AddBookContainer";
+import AddBookContainer from "./component/AddBook/AddBookContainer";
 import { Homepage } from "./component/Homepage/Homepage";
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
       </header>
       <Switch>
         <Route exact={true} path="/" component={Homepage}></Route>
-        <Route path="/books" component={BookList}></Route>
-        <Route path="/addbook" component={WrappedComponentAddBook}></Route>
+        <Route path="/books" component={BookListContainer()}></Route>
+        <Route path="/addbook" component={AddBookContainer}></Route>
       </Switch>
     </div>
   );

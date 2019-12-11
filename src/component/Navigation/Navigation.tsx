@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export const Navigation = ({}) => {
+export const Navigation = (): JSX.Element => {
   return (
     <nav className={"navigation-bar"}>
       <div className={"btn home-btn"}>
