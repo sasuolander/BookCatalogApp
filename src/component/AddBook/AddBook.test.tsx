@@ -1,6 +1,6 @@
 import React from "react";
-import { AddBook } from "./AddBook";
-import { mount, shallow, render } from "enzyme";
+import { AddBook, componentAddProps } from "./AddBook";
+import { shallow } from "enzyme";
 import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import { combineReducers } from "redux";
@@ -16,11 +16,23 @@ describe("Add book", () => {
   const middlewares = [thunk];
   const mockStore = configureStore(middlewares);
   let store, formComponentWrapper;
+
+  // @ts-ignore
+  const defaultProps: componentAddProps = {
+    handleSubmit() {
+      return;
+    },
+    books: [],
+    addBookFunction() {
+      return;
+    }
+  };
+
   beforeEach(() => {
     const initialState = {};
     store = mockStore(initialState);
 
-    wrap = shallow(<AddBook />);
+    wrap = shallow(<AddBook {...defaultProps} />);
   });
   it("render empty component Add book", () => {
     expect(wrap).toMatchSnapshot();
